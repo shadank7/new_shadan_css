@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
+    <title>Sendan International Company</title>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.css" rel="stylesheet">
+    <link href="css/nth-tabs.min.css" rel="stylesheet">
+    <link href="css/nth-icons.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollbar/0.2.11/jquery.scrollbar.min.js"></script>
+    <script src="js/nth-tabs.js"></script>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        .wrapper {
+            margin-top: 0px;
+            height: calc(100% - 220px);
+        }
+
+        .page-wrapper {
+            overflow: hidden;
+            height: 100%;
+        }
+    </style>
+    <script>
+
+        var nthTabs;
+
+        $(function () {
+
+            nthTabs = $("#main-tabs").nthTabs();
+
+            nthTabs.addTab({
+                id: 'home',
+                title: 'Home',
+                url: "home.html",
+                active: true,
+                allowClose: false
+            });
+
+            nthTabs.addTab({
+                id: 'menu-manage',
+                title: 'Index',
+                active: false,
+                content: 'Index content',
+                allowClose: false
+            }).addTab({
+                id: 'role-manage',
+                title: 'Role',
+                active: false,
+                content: 'Role Content',
+                allowClose: false
+            });
+            
+            
+            nthTabs.addTab({
+                id: 'menu-manage2',
+                title: 'Index2',
+                active: false,
+                content: 'Index content',
+                allowClose: false
+            }).addTab({
+                id: 'role-manage2',
+                title: 'Role2',
+                active: false,
+                content: 'Role Content',
+                allowClose: false
+            });
+            
+            
+            nthTabs.addTab({
+                id: 'menu-manage3',
+                title: 'Index3',
+                active: false,
+                content: 'Index content',
+                allowClose: false
+            }).addTab({
+                id: 'role-manage3',
+                title: 'Role3',
+                active: false,
+                content: 'Role Content',
+                allowClose: false
+            });
+            
+            nthTabs.addTab({
+                id: 'menu-manage',
+                title: 'Index',
+                active: false,
+                content: 'Index content',
+                allowClose: false
+            }).addTab({
+                id: 'role-manage',
+                title: 'Role',
+                active: false,
+                content: 'Role Content',
+                allowClose: false
+            });
+            
+            
+            nthTabs.addTab({
+                id: 'menu-manage2',
+                title: 'Index2',
+                active: false,
+                content: 'Index content',
+                allowClose: false
+            }).addTab({
+                id: 'role-manage2',
+                title: 'Role2',
+                active: false,
+                content: 'Role Content',
+                allowClose: false
+            });
+            
+            
+            nthTabs.addTab({
+                id: 'menu-manage3',
+                title: 'Index3',
+                active: false,
+                content: 'Index content',
+                allowClose: false
+            }).addTab({
+                id: 'role-manage3',
+                title: 'Role3',
+                active: false,
+                content: 'Role Content',
+                allowClose: false
+            });
+            
+        });
+    </script>
+</head>
+<body>
+<div class="menu-class"></div>
+<div class="container">
+    <div class="page-wrapper">
+        <div class="nth-tabs" id="main-tabs">
+        </div>
+    </div>
+</div>
+</body>
+</html>
